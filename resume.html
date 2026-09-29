@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek G. Harde — Curriculum Vitae / Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0284c7;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background: #f1f5f9;
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 48px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .header-title h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #0f172a;
+        }
+
+        .header-title p {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .edu-item, .exp-item, .project-item {
+            margin-bottom: 16px;
+        }
+
+        .edu-header, .exp-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .edu-sub, .exp-sub {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .bullets {
+            list-style-type: square;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .bullets li {
+            margin-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .skill-group strong {
+            color: var(--text-dark);
+        }
+
+        .action-bar {
+            max-width: 850px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-print {
+            background: #0284c7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .btn-print:hover {
+            background: #0369a1;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+            .action-bar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="action-bar">
+        <a href="../index.html" class="btn-print" style="background: #475569;">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <button onclick="window.print()" class="btn-print">
+            <i class="fas fa-print"></i> Print / Save as PDF
+        </button>
+    </div>
+
+    <div class="resume-container">
+        <header class="header">
+            <div class="header-title">
+                <h1>Abhishek G. Harde</h1>
+                <p>Software Engineer | AI/ML Engineer | Backend Developer</p>
+            </div>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> <a href="mailto:abhishekharde8551@gmail.com">abhishekharde8551@gmail.com</a></div>
+                <div><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/abhishekhgarde" target="_blank">linkedin.com/in/abhishekhgarde</a></div>
+                <div><i class="fab fa-github"></i> <a href="https://github.com/abhi85512" target="_blank">github.com/abhi85512</a></div>
+                <div><i class="fas fa-location-dot"></i> Maharashtra, India</div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user"></i> Professional Summary</h2>
+            <p class="summary">
+                Driven Information Technology engineering undergraduate (Class of 2027) with a strong foundation in Software Engineering, AI/ML algorithms, Data Science, and scalable backend architecture. Proficient in Python, Java, SQL, Machine Learning pipelines, OpenCV, and cloud technologies. Proven track record in building cryptographically secured multi-factor authentication systems and intelligent retrieval engines.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="edu-item">
+                <div class="edu-header">
+                    <span>Bachelor of Technology in Information Technology</span>
+                    <span>2023 – 2027</span>
+                </div>
+                <div class="edu-sub">Sanjivani College of Engineering, Kopargaon (Affiliated to SPPU)</div>
+                <ul class="bullets">
+                    <li><strong>Cumulative CGPA:</strong> 8.07 / 10.0</li>
+                    <li><strong>Core Coursework:</strong> Data Structures & Algorithms, Machine Learning, Database Management Systems (DBMS), Object-Oriented Programming, Operating Systems, Computer Networks, Software Engineering.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <strong>Languages:</strong> Python, Java, C++, SQL, JavaScript, HTML5/CSS3
+                </div>
+                <div class="skill-group">
+                    <strong>AI/ML & Data Science:</strong> TensorFlow, PyTorch, OpenCV, Scikit-Learn, Pandas, NumPy, GenAI/RAG
+                </div>
+                <div class="skill-group">
+                    <strong>Backend & Databases:</strong> Node.js, Express, Flask, MySQL, PostgreSQL, REST APIs
+                </div>
+                <div class="skill-group">
+                    <strong>Cloud & Tools:</strong> AWS (EC2, S3, IAM), Docker, Git, GitHub, Linux Shell, VS Code
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-laptop-code"></i> Key Projects</h2>
+            <div class="project-item">
+                <div class="project-header">
+                    <span>TrustVote — Secure QR + Face-Verification Voting System</span>
+                    <span>Security & Vision</span>
+                </div>
+                <ul class="bullets">
+                    <li>Developed a secure biometric election platform combining QR-token authorization with real-time OpenCV facial verification.</li>
+                    <li>Integrated anti-spoofing detection and encrypted voter token validation to prevent duplicate voting and unauthorized access.</li>
+                    <li>Implemented a high-throughput backend using Python, Flask, and relational SQL databases.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span>Enterprise Multi-Agent Search System</span>
+                    <span>AI / LLM & RAG</span>
+                </div>
+                <ul class="bullets">
+                    <li>Engineered an intelligent retrieval engine with vector database embeddings (FAISS) for automated document analysis.</li>
+                    <li>Integrated multi-agent task orchestrators using LangChain & Python to deliver sub-second semantic search results.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications & Achievements</h2>
+            <ul class="bullets">
+                <li><strong>AWS Academy Graduate:</strong> AWS Academy Cloud Architecting</li>
+                <li><strong>Google Cloud:</strong> Generative AI Fundamentals & Cloud Infrastructure</li>
+                <li><strong>NPTEL (IIT Kharagpur):</strong> Programming in Java (Elite Certification)</li>
+                <li><strong>Specialized Technical Training:</strong> Machine Learning using Python</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
